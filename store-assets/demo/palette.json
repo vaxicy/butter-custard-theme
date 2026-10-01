@@ -1,0 +1,17 @@
+{
+  "name": "butter-custard",
+  "light": {
+    "background": "#FEFED7",
+    "foreground": "#353521",
+    "accent": "#C2AD29",
+    "selection": "#FDE863",
+    "sidebar": "#FFFFE5"
+  },
+  "dark": {
+    "background": "#3C320B",
+    "foreground": "#FEFEBE",
+    "accent": "#DBC00F",
+    "selection": "#5A5418",
+    "sidebar": "#4B3E11"
+  }
+}

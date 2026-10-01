@@ -1,0 +1,5 @@
+# CodeBuddy working memory / local machine data - never commit
+.codebuddy/
+__pycache__/
+*.vsix
+generated-images/

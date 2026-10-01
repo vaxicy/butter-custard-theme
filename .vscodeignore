@@ -1,0 +1,9 @@
+# local machine data / working memory - must not end up in the .vsix
+.codebuddy/
+.vscode/
+.gitignore
+# dev-only helpers, not needed at runtime
+scripts/
+store-assets/logo-candidates/
+store-assets/demo/
+__pycache__/
