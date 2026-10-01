@@ -3,7 +3,7 @@
   "type": "light",
   "colors": {
     "foreground": "#353521",
-    "descriptionForeground": "#D6D28F",
+    "descriptionForeground": "#7F7940",
     "focusBorder": "#C2AD29",
     "selection.background": "#FDE863",
     "editor.background": "#FEFED7",
@@ -12,11 +12,11 @@
     "editor.inactiveSelectionBackground": "#FDE86399",
     "editor.lineHighlightBackground": "#FDE863",
     "editorCursor.foreground": "#C2AD29",
-    "editorLineNumber.foreground": "#D6D28F",
+    "editorLineNumber.foreground": "#8F8848",
     "editorLineNumber.activeForeground": "#C2AD29",
-    "editorIndentGuide.background1": "#BFBF4566",
-    "editorIndentGuide.activeBackground1": "#D6D28F",
-    "editorWhitespace.foreground": "#BFBF4566",
+    "editorIndentGuide.background1": "#B0A93CB3",
+    "editorIndentGuide.activeBackground1": "#A79E52",
+    "editorWhitespace.foreground": "#B0A93C99",
     "editor.findMatchBackground": "#E2CD49",
     "editor.findMatchHighlightBackground": "#E2CD4977",
     "editorBracketMatch.border": "#C2AD29",
@@ -66,7 +66,7 @@
     "input.background": "#FFFFE5",
     "input.foreground": "#353521",
     "input.border": "#BFBF45",
-    "input.placeholderForeground": "#D6D28F",
+    "input.placeholderForeground": "#7F7940",
     "dropdown.background": "#FFFFE5",
     "dropdown.foreground": "#353521",
     "dropdown.border": "#BFBF45",
@@ -129,7 +129,7 @@
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#D6D28F",
+        "foreground": "#8F8848",
         "fontStyle": "italic"
       }
     },

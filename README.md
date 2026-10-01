@@ -7,7 +7,7 @@
 Buttery light and caramel dark colour themes for VS Code.
 
 [![VS Code Theme](https://img.shields.io/badge/VS%20Code-Theme-C2AD29?logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=lilinhuang.butter-custard-theme)
-![Version](https://img.shields.io/badge/version-1.0.0-C2AD29)
+![Version](https://img.shields.io/badge/version-1.0.1-C2AD29)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 </div>
@@ -18,6 +18,8 @@ Buttery light and caramel dark colour themes for VS Code.
 - Warm custard canvas in light mode (`#FEFED7`), deep cocoa canvas in dark mode (`#3C320B`).
 - One golden accent drives the cursor, badges, buttons, active tab, links and active list rows.
 - Muted dessert palette for syntax: mustard keywords, olive strings, caramel types, sage functions.
+- Secondary text is kept quiet but legible instead of washing out: line numbers, list and
+  panel descriptions, comments, input placeholders and indentation guides.
 - Workbench-wide theming: activity bar, side bar, tabs, panel, terminal, command palette,
   lists, inputs, badges, notifications, diffs and Git decorations.
 - Semantic highlighting enabled, so TypeScript, JavaScript and Python pick up accurate
@@ -27,11 +29,11 @@ Buttery light and caramel dark colour themes for VS Code.
 
 Light
 
-![Butter Custard Theme Light](https://raw.githubusercontent.com/vaxicy/butter-custard-theme/main/store-assets/screenshots/en/butter-custard-theme-light.png)
+![Butter Custard Theme Light](https://raw.githubusercontent.com/vaxicy/butter-custard-theme/main/store-assets/screenshots/en/butter-custard-theme-light.png?v=2)
 
 Dark
 
-![Butter Custard Theme Dark](https://raw.githubusercontent.com/vaxicy/butter-custard-theme/main/store-assets/screenshots/en/butter-custard-theme-dark.png)
+![Butter Custard Theme Dark](https://raw.githubusercontent.com/vaxicy/butter-custard-theme/main/store-assets/screenshots/en/butter-custard-theme-dark.png?v=2)
 
 Both previews are real Visual Studio Code windows captured with the extension
 installed, using the same file and the same layout — what you see is what the
@@ -43,6 +45,7 @@ theme renders.
 | --- | --- | --- |
 | Editor background | `#FEFED7` | `#3C320B` |
 | Foreground | `#353521` | `#FEFEBE` |
+| Muted text (line numbers, descriptions, placeholders) | `#7F7940` | `#897C24` |
 | Accent (cursor, badges) | `#C2AD29` | `#DBC00F` |
 | Selection | `#FDE863` | `#5A5418` |
 | Side bar | `#FFFFE5` | `#4B3E11` |

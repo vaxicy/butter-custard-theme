@@ -114,15 +114,23 @@ foreach ($name in ($Variant -split ",")) {
         $wsDir
     ) -WindowStyle Hidden | Out-Null
 
-    # wait for the workbench window
+    # wait for the workbench window: title must match AND the window must already
+    # have real size (a matching helper/ghost window would be a few dozen px)
     $proc = $null
     $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
     while ((Get-Date) -lt $deadline) {
         Start-Sleep -Milliseconds 1500
-        $candidate = Get-Process -Name Code -ErrorAction SilentlyContinue |
-            Where-Object { $_.MainWindowHandle -ne 0 -and $_.MainWindowTitle -like "*butter-custard-demo*" } |
-            Select-Object -First 1
-        if ($candidate) { $proc = $candidate; break }
+        $candidates = Get-Process -Name Code -ErrorAction SilentlyContinue |
+            Where-Object { $_.MainWindowHandle -ne 0 -and $_.MainWindowTitle -like "*butter-custard-demo*" }
+        foreach ($candidate in $candidates) {
+            $probe = New-Object ButterWin+RECT
+            [ButterWin]::GetWindowRect($candidate.MainWindowHandle, [ref]$probe) | Out-Null
+            if (($probe.Right - $probe.Left) -ge 800 -and ($probe.Bottom - $probe.Top) -ge 600) {
+                $proc = $candidate
+                break
+            }
+        }
+        if ($proc) { break }
     }
     if (-not $proc) { throw "VS Code window for '$name' did not appear within $TimeoutSeconds s" }
 
